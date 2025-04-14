@@ -5,6 +5,7 @@ const cors = require('cors')
 const authorization = require('./routes/authorization')
 const userRouter = require('./routes/user')
 const blogRouter = require('./routes/blog')
+const categoryRouter = require('./routes/category')
 
 
 //creating the express object
@@ -16,6 +17,7 @@ app.use(express.json())
 app.use(authorization)
 app.use('/user', userRouter)
 app.use('/blog', blogRouter)
+app.use('/category', categoryRouter)
 
 
 //starting the server at port 4000
