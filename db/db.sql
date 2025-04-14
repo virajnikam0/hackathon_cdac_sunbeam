@@ -9,9 +9,7 @@ create table user(
     email varchar(50),
     password varchar(50),
     phone_no varchar(50),
-    created_time date(Date),
-    
-
+    created_time date(Date)
 )
 
 
