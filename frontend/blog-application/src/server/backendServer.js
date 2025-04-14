@@ -31,7 +31,7 @@ export async function userAddBlogFrontendToBackend(title,category,description) {
         category : category,
         description : description
     };
-    const res = await axios.post("http://localhost:4000/user/addblog",body);
+    const res = await axios.post("http://localhost:4000/blog/addblog",body);
     console.log(res.data);
 }
 

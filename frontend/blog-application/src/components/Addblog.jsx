@@ -45,7 +45,7 @@ function Addblog() {
                 </div>
 
                 {/* adding category dropdown */}
-                <select class="form-select mt-3" aria-label="Default select example" style={{ width: "500px" }}   onChange={(e) => setTitle(e.target.value)}>
+                <select class="form-select mt-3" aria-label="Default select example" style={{ width: "500px" }}   onChange={(e) => setCategory(e.target.value)}>
                     <option selected>Category</option>
                     <option value="tech">Tech</option>
                     <option value="travel">Travel</option>
@@ -54,7 +54,7 @@ function Addblog() {
 
                 <div className="mb-3" style={{ width: "500px" }}>
                     <label for="exampleFormControlTextarea1" className="form-label">Description</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="give all details why tech making progress"   onChange={(e) => setTitle(e.target.value)}></textarea>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="give all details why tech making progress" onChange={(e) => setDescription(e.target.value)}></textarea>
                 </div>
                 <button type="button" class="btn btn-primary" onClick={onclickHandler}>Add  Blog</button>
 
