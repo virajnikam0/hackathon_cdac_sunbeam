@@ -13,7 +13,7 @@ export async function userSignupDataFromFrontendToBackend(fullname,email,phoneNu
     const body = {
         email : email,
         password : password,
-        fullname : fullname,
+        fullName : fullname,
         phoneNum : phoneNum
 
     }
