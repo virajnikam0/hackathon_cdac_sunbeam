@@ -14,7 +14,8 @@ function Login() {
     return (
         <>
         <h4>login</h4>
-            <div className="container mt-5" style={{width:"300px"}}>
+        
+            <div className=" mt-5" style={{width:"300px"}}>
                     <div className="mb-3">
                         <label for="exampleInputEmail1" className="form-label">Email address</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange={(e) =>setEmail(e.target.value)}/>
