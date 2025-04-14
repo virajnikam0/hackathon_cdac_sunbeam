@@ -12,9 +12,12 @@ router.post('/signup', (req, res) => {
     const { id, fullName, email, password, phoneNum } = req.body
     const encryptedPassword = String(cryptoJs.SHA256(password))
     //have to write select query to validate unique email address  
-    const sql = `INSERT INTO user(id, full_name, email, password, phone_no) VALUES(?,?,?,?,?)`
+    const sql = `INSERT INTO user(id, full_name, email, password, phone_no) VALUES(?,?,?,?,?)`;
+    // console.log(sql)
 
     pool.query(sql, [id, fullName, email, encryptedPassword, phoneNum], (error, data) => {
+    // pool.query(sql,[id, fullName, email, encryptedPassword, phoneNum],(error, data) => {
+        console.log(data)
         res.send(result.createResult(error, data))
     })
 })
